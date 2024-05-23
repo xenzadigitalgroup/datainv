@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Investor</h1>
+        <form id="dataForm">
+            <label for="id_pelanggan">ID Investor:</label>
+            <input type="text" id="id_pelanggan" name="id_pelanggan" required>
+            
+            <button type="submit">Periksa</button>
+        </form>
+        
+        <div id="result">
+            <h2>Hasil</h2>
+            <p>Nama: <span id="nama"></span></p>
+            <p>Total Dana: <span id="totalDana"></span></p>
+            <p>Keuntungan: <span id="keuntungan"></span></p>
+        </div>
+        
+        <div id="progressBarContainer">
+            <div id="progressBar">
+                <div id="progressBarFill">0%</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
